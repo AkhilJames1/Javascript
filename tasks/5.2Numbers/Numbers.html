@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            function readNumber()
+            {
+
+            do{
+             num = prompt('Enter number', '');
+            }while( !isFinite(num) );
+
+            if (num === null || num === '') return null;
+            return +num;
+            
+        }
+        alert(`Read: ${readNumber()}`);
+
+        </script>
+    </body>
+</html>
