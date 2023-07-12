@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        function Calculator() {
+            this.read = function () {
+                this.a = +prompt('Enetr the value of a', '');
+                this.b = +prompt('Enetr the value of b', '');
+            };
+
+            this.sum = function () {
+                return this.a + this.b;
+            };
+            
+            this.mul = function () {
+                return this.a * this.b;
+            };
+        }
+
+        let calculator = new Calculator();
+        calculator.read();
+
+        alert("Sum is" + calculator.sum());
+        alert("Mul is" + calculator.mul());
+    </script>
+</body>
+
+</html>
