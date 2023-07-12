@@ -1,0 +1,51 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        let user = {
+            name: "John",
+            surname: "Smith",
+        }
+        user.name = "Pith"
+        delete user.surname
+
+
+
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130,
+
+        }
+        let sum = 0;
+        for (let value in salaries) {
+            sum += salaries[value]
+        }
+        alert(sum);
+
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+
+        multiplyNumeric(menu);
+
+        function multiplyNumeric(obj)
+        for (let key in obj)
+        {
+            if(typeof obj[key] =='number' ){
+                obj[key] = obj[key]*2
+            }
+            
+        }
+
+
+
+    </script>
+</body>
+
+</html>
