@@ -1,0 +1,41 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+
+        function count1(user) {
+            let count = 0;
+            for( let number of Object.keys(user)){
+
+                count = count+1;
+            }
+            return count;
+        }
+
+        let user = {
+            name: 'John',
+            age: 30
+        };
+
+        alert(count1(user));
+       
+
+
+
+        // another method
+        
+
+        function count2(user) {
+            return Object.keys(user).length;
+        }
+        alert(count2(user));
+
+
+        
+
+    </script>
+</body>
+
+</html>
