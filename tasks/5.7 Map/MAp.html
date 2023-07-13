@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+           const names = ["Akhil", "Amal", "Chris"];
+
+        //    names.map((name) => alert(`${name}`))
+
+        const headingWithNames = [];
+         for(let name of names){
+            headingWithNames.push(`<h1>${name}</h1>`);
+        }
+        const headings = names.map((name) => 
+        {
+       return '<h1>' +name+ '</h1>'
+        })
+
+        const newHeading = headings.map((name) => `<h2> ${name} </h2>`)
+        
+        
+        console.log(names,headingWithNames,headings, newHeading)
+         
+
+
+        </script>
+    </body>
+</html>
