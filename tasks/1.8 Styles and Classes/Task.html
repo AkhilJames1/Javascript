@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+
+
+  <script>
+    function showNotification({className, html}) {
+
+      let notification = document.createElement('div');
+      notification.className = "notification";
+      if (className) {
+        notification.classList.add(className);
+      }
+
+ 
+      notification.innerHTML = "This is notification";
+      document.body.append(notification);
+
+      setTimeout(() => notification.remove(), 1500);
+    }
+
+    let i = 1;
+    setInterval(() => {
+      showNotification({
+        className: "welcome"
+      });
+    }, 2000);
+  </script>
+
+
+</body>
+</html>
